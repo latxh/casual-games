@@ -1,56 +1,56 @@
 /* Catan */
 .game-01 {
-    background: url(/assets/games/catan.png);
+    background: url(../assets/games/catan.png);
 }
 
 /* The Crew */
 .game-02 {
-    background: url(/assets/games/crew.png);
+    background: url(../assets/games/crew.png);
 }
 
 /* RuneScape */
 .game-03 {
-    background: url(/assets/games/osrs.png);
+    background: url(../assets/games/osrs.png);
 }
 
 /* Bowmania */
 .game-04 {
-    background: url(/assets/games/bowmania.png);
+    background: url(../assets/games/bowmania.png);
 }
 
 /* 4 Pics 1 Word */
 .game-05 {
-    background: url(/assets/games/fourpic.png);
+    background: url(../assets/games/fourpic.png);
 }
 
 /* Parking Panic */
 .game-06 {
-    background: url(/assets/games/parking.png);
+    background: url(../assets/games/parking.png);
 }
 
 /* Pinball */
 .game-07 {
-    background: url(/assets/games/pinball.png);
+    background: url(../assets/games/pinball.png);
 }
 
 /* Jewel */
 .game-08 {
-    background: url(/assets/games/jewel.png);
+    background: url(../assets/games/jewel.png);
 }
 
 /* Hex */
 .game-09 {
-    background: url(/assets/games/hex.png);
+    background: url(../assets/games/hex.png);
 }
 
 /* Cricket */
 .game-10 {
-    background: url(/assets/games/cricket.png);
+    background: url(../assets/games/cricket.png);
 }
 
 /* Pegball */
 .game-11 {
-    background: url(/assets/games/pegball.png);
+    background: url(../assets/games/pegball.png);
 }
 
 .game-01, .game-02, .game-03, .game-04, .game-05, 
