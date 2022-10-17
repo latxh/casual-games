@@ -1,27 +1,25 @@
 /* ACCORDION */
 
 #accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: var(--game-info-button);
+    color: var(--font-1);
     cursor: pointer;
-    padding: 18px;
-    width: 100%;
+    padding: 12px 16px;
+    border-radius: 6px;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
-    transition: 0.4s;
+    font-size: 14px;
+    transition: background-color 0.2s;
+    white-space: nowrap;
 }
 
 .active, #accordion:hover {
-    background-color: #ccc;
+    background-color: var(--game-info-button-hover);
 }
 
 #panel {
     padding: 0 20px;
-    background-color: var(--header-background);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
     color: var(--font-1);
     max-width: 1236px;
     width: 100%;
@@ -30,15 +28,41 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.panel-sections-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.panel-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+}
+
+.panel-sections p {
+    color: var(--font-2);
+}
+
+.panel-sections h5{
+    color: var(--font-1);
+    font-size: 14px;
+    font-weight: 600;
 }
 
 
 /* IFRAME */
 
 .game {
-    background-color: var(--header-background);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background-color: var(--placeholder);
     border-radius: 8px;
     min-height: 424px;
     height: calc(100vh - 300px);
@@ -46,34 +70,80 @@
     width: 100%;
     max-width: 1236px;
     margin-inline: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
     margin-bottom: 12px;
 }
 
 .iframe {
-    border-radius: 8px 8px 0 0;
+    border-radius: 8px;
     border: none;
     outline: none;
     height: 100%;
     width: 100%;
 }
 
+.game-details {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 1236px;
+    border-radius: 8px;
+    background-color: var(--game-info-background);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.game-info-content,
 .game-info-wrapper {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.game-info-wrapper {
+    padding: 16px 20px;
+    justify-content: space-between;
 }
 
 .game-info {
-    max-height: 100px;
-    height: 100%;
-    padding: 8px 20px;
     display: flex;
     flex-direction: column;
 }
 
+.game-info h6 {
+    color: var(--font-2);
+}
+
+.game-info h2 {
+    color: var(--font-1);
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+
+.game-info p {
+    color: var(--font-2);
+}
+
+.game-kf {
+    min-height: 70px;
+    min-width: 70px;
+    background-size: cover;
+    background-image: url(/assets/games/kittenforce.png);
+}
+
+.game-info-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
+
 @media only screen and (max-width: 1256px) {
+    .game-details,
     #panel,
     .game {
         max-width: 924px;
@@ -88,16 +158,53 @@
         flex-direction: column;
     }
 
+    .game-info-wrapper {
+        padding: 14px;
+    }
+
+    .game-info-buttons {
+        gap: 6px;
+    }
+
+    .panel-sections-wrapper {
+        gap: 14px;
+        flex-direction: column;
+    }
+
+    .game-details ,
     #panel {
         max-width: 612px;
+    }
+
+    #panel {
+        gap: 14px;
+        padding: 0 14px;
     }
 }
 
 @media only screen and (max-width: 645px) {
+    .game-info-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .game-info-buttons {
+        width: 100%;
+    }
+
+    #accordion {
+        flex: 1;
+    }
+
+    .game-details,
     #panel,
     .game {
         max-width: 100%;
         border-radius: 0;
+    }
+
+    .game {
+        margin-bottom: 0;
     }
 
     .iframe {

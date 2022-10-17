@@ -39,6 +39,9 @@
   background-color: var(--background);
 
   --games-background: rgba(255, 255, 255, 0.3);
+  --game-info-background: rgba(255, 255, 255, 0.7);
+  --game-info-button: #B4E0FF;
+  --game-info-button-hover: #9AD5FF;
   --category-t-gradient: rgba(20, 20, 20, 0.5);
 }
 
@@ -68,6 +71,9 @@
   --placeholder: #282828;
 
   --games-background: rgba(26, 37, 69, 0.4);
+  --game-info-background: rgba(26, 37, 69, 0.8);
+  --game-info-button: #2A67BA;
+  --game-info-button-hover: #3977CB;
   --category-t-gradient: rgb(20, 20, 20);
 }
 
