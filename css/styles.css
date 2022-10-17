@@ -98,6 +98,12 @@ body {
   background: linear-gradient(var(--gradient-1), var(--gradient-2), var(--gradient-3), var(--gradient-4));
 }
 
+main {
+  z-index: 2;
+  position: relative;
+  padding: 12px 0 24px 0;
+}
+
 .grid-wrapper {
   z-index: 1;
   position: sticky;
