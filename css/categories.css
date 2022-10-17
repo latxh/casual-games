@@ -1,0 +1,96 @@
+.t-category .spotlight-gradient {
+    background: linear-gradient(rgba(20, 20, 20, 0) 40%, var(--category-t-gradient) 95%);
+}
+
+.t-category .spotlight-gradient::before {
+    background: linear-gradient(rgba(20, 20, 20, 0) 30%, var(--category-t-gradient) 75%);
+}
+
+.category-01 {
+    background: url(/assets/categories/fire.png);
+}
+
+.category-01 .spotlight-gradient {
+    background: linear-gradient(hsla(27, 79%, 9%, 0) 20%, hsla(27, 83%, 18%, 0.6) 100%);
+}
+
+.category-01 .spotlight-gradient::before {
+    background: linear-gradient(hsla(27, 79%, 9%, 0) 50%, hsla(27, 83%, 18%, 0.4) 100%);
+}
+
+.category-02 {
+    background: url(/assets/categories/arcade.png);
+}
+
+.category-02 .spotlight-gradient {
+    background: linear-gradient(hsla(336, 79%, 9%, 0) 20%, hsla(336, 83%, 18%, 0.6) 100%);
+}
+
+.category-02 .spotlight-gradient::before {
+    background: linear-gradient(hsla(336, 79%, 9%, 0) 50%, hsla(336, 83%, 18%, 0.4) 100%);
+}
+
+.category-03 {
+    background: url(/assets/categories/puzzle.png);
+}
+
+.category-03 .spotlight-gradient {
+    background: linear-gradient(hsla(72, 79%, 9%, 0) 20%, hsla(72, 83%, 18%, 0.6) 100%);
+}
+
+.category-03 .spotlight-gradient::before {
+    background: linear-gradient(hsla(72, 79%, 9%, 0) 50%, hsla(72, 83%, 18%, 0.4) 100%);
+}
+
+.category-04 {
+    background: url(/assets/categories/strat.png);
+}
+
+.category-04 .spotlight-gradient {
+    background: linear-gradient(hsla(176, 79%, 9%, 0) 20%, hsla(176, 83%, 18%, 0.6) 100%);
+}
+
+.category-04 .spotlight-gradient::before {
+    background: linear-gradient(hsla(176, 79%, 9%, 0) 50%, hsla(176, 83%, 18%, 0.4) 100%);
+}
+
+.category-05 {
+    background: url(/assets/categories/card.png);
+}
+
+.category-05 .spotlight-gradient {
+    background: linear-gradient(hsla(260, 79%, 9%, 0) 20%, hsla(260, 83%, 18%, 0.6) 100%);
+}
+
+.category-05 .spotlight-gradient::before {
+    background: linear-gradient(hsla(260, 79%, 9%, 0) 50%, hsla(260, 83%, 18%, 0.4) 100%);
+}
+
+.category-06 {
+    background: url(/assets/categories/match.png);
+}
+
+.category-06 .spotlight-gradient {
+    background: linear-gradient(hsla(216, 79%, 9%, 0) 20%, hsla(216, 83%, 18%, 0.6) 100%);
+}
+
+.category-06 .spotlight-gradient::before {
+    background: linear-gradient(hsla(216, 79%, 9%, 0) 50%, hsla(216, 83%, 18%, 0.4) 100%);
+}
+
+.category-07 {
+    background: url(/assets/categories/word.png);
+}
+
+.category-07 .spotlight-gradient {
+    background: linear-gradient(hsla(234, 79%, 9%, 0) 20%, hsla(234, 83%, 18%, 0.6) 100%);
+}
+
+.category-07 .spotlight-gradient::before {
+    background: linear-gradient(hsla(234, 79%, 9%, 0) 50%, hsla(234, 83%, 18%, 0.4) 100%);
+}
+
+.category-01, .category-02, .category-03, .category-04
+.category-05, .category-06, .category-07 {
+    background-size: cover;
+}

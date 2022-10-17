@@ -1,0 +1,258 @@
+.promoted-games {
+    min-height: 424px;
+    height: calc(100vh - 300px);
+    max-height: 800px;
+    width: 100%;
+    max-width: 1236px;
+    padding: 0 0 24px 0;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.staff-picks {
+    flex: 1;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.trending {
+    position: relative;
+    height: 100%;
+    background-color: var(--games-background);
+}
+
+.trending-header {
+    height: 42px;
+    padding: 10px 16px 4px 16px;
+    justify-content: space-between;
+}
+
+.recent-games-wrapper  {
+    height: calc(100% - 42px);
+    padding: 10px 16px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.recent-games-wrapper:hover {
+    overflow-y: auto;
+}
+
+.recent-game {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    transition: background-color 0.2s;
+}
+
+.recent-game:hover {
+    background-color: var(--button-hover);
+}
+
+.recent-game-th {
+    height: 50px;
+    width: 50px;
+    border-radius: 8px;
+    background-color: var(--placeholder);
+}
+
+.recent-game-content h4 {
+    color: var(--font-1);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.recent-game-content p {
+    font-size: 14px;
+    color: var(--font-2);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+
+.small-spotlight-wrapper {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.trending-header h3,
+.small-spotlight-content {
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.trending-header h3 {
+    color: var(--font-1);
+}
+
+.main-spotlight,
+.small-spotlight {
+    cursor: pointer;
+    position: relative;
+    flex: 1;
+    border-radius: 8px;
+    background-color: var(--placeholder);
+}
+
+.main-spotlight {
+    background-color: var(--placeholder);
+    background: url(/assets/games/main_game.jpg);
+    background-size: cover;
+    background-position: 50% 30%;
+}
+
+.slot-1 {
+    background: url(/assets/games/slot-1.png);
+    background-size: cover;
+}
+
+.slot-2 {
+    background: url(/assets/games/slot-2.png);
+    background-size: cover;
+}
+
+.slot-3 {
+    background: url(/assets/games/slot-3.png);
+    background-size: cover;
+}
+
+.spotlight-gradient {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    background: linear-gradient(rgba(20, 20, 20, 0) 40%, rgb(20, 20, 20) 95%);
+    transition: all 0.2s;
+}
+
+.spotlight-gradient::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    background: linear-gradient(rgba(20, 20, 20, 0) 50%, rgb(20, 20, 20) 85%);
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.spotlight-gradient:hover::before {
+    opacity: 1;
+}
+
+.main-spotlight-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+}
+
+.game-info h6,
+.main-spotlight-content h6 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.game-info h2,
+.main-spotlight-content h2 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.game-info p,
+.main-spotlight-content p {
+    font-size: 16px;
+    color: #aaa;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+
+@media only screen and (max-width: 1256px) {
+    .promoted-games {
+        max-width: 924px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .main-spotlight {
+        min-height: 400px;
+    }
+
+    .main-spotlight-content {
+        bottom: 14px;
+        left: 14px;
+        right: 14px;
+    }
+
+    .small-spotlight-content {
+        font-size: 16px;
+    }
+
+    .promoted-games {
+        max-height: unset;
+        height: unset;
+        max-width: 612px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .staff-picks {
+        flex: auto;
+        height: 600px;
+    }
+
+    .trending {
+        /* Remove display none to show recently-played bar on mobile */
+        display: none;
+
+        width: 100%;
+        height: 400px;
+    }
+
+    .recent-games-wrapper {
+        overflow-y: auto;
+    }
+}
+
+@media only screen and (max-width: 645px) {
+    .promoted-games {
+        padding: 12px 12px 24px 12px;
+        max-width: 100%;
+        flex-direction: column;
+    }
+}

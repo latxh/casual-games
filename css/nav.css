@@ -1,0 +1,92 @@
+#nav-visible {    
+    display: none;
+}
+
+nav {
+    z-index: 4;
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    bottom: 12px;
+    max-width: 280px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--nav-background);
+    backdrop-filter: blur(36px);
+    -webkit-backdrop-filter: blur(36px);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+nav div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-header {
+    padding: 10px 16px 4px 16px;
+    justify-content: space-between;
+}
+
+.nav-option-wrapper {
+    padding: 10px 16px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.nav-option-wrapper:hover {
+    overflow-y: auto;
+}
+
+.nav-option {
+    width: 100%;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.nav-option:hover {
+    background-color: var(--button-hover);
+}
+
+.nav-option:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--background), 0 0 0 4px var(--focus);
+}
+
+hr {
+    border: 1px solid var(--nav-seperator);
+    width: 100%;
+    border-radius: 48px;
+}
+
+#backdrop {
+    z-index: 4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--nav-backdrop);
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        border-radius: 0;
+        max-width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .nav-option-wrapper {
+        overflow-y: auto;
+    }
+}

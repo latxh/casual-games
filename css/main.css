@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  color: var(--font-1);
+  background-color: var(--background);
+}
+
+:root {
+  min-height: 100vh;
+  scrollbar-gutter: stable;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+  --focus: #0078D4;
+
+  --ms-logo: #737474;
+  --font-icons: #222;
+  --background: #f5f5f5;
+  --font-1: #222;
+  --font-2: #606060;
+
+  --button: transparent;
+  --button-hover: rgba(0, 0, 0, 0.05);
+
+  --disclaimer-background:#F7ECD4;
+  --disclaimer-font:#9b6900;
+  --header-background: rgb(227, 234, 255, 0.8);
+
+  --nav-backdrop: rgba(0, 0, 0, 0.1);
+  --nav-background: rgba(255, 255, 255, 0.7);
+  --nav-seperator: rgba(0, 0, 0, 0.1);
+
+  --gradient-1: #E3EAFF;
+  --gradient-2: #F4EAF6;
+  --gradient-3: #FCF6F9;
+  --gradient-4: #FEFEFE;
+
+  --placeholder: #DEDEDE;
+  background-color: var(--background);
+
+  --games-background: rgba(255, 255, 255, 0.3);
+  --category-t-gradient: rgba(20, 20, 20, 0.5);
+}
+
+.dark {
+  --ms-logo: #FFF;
+  --font-icons: #fff;
+  --background: #222;
+  --font-1: #fff;
+  --font-2: #AAAAAA;
+
+  --button: transparent;
+  --button-hover: rgba(255, 255, 255, 0.1);
+  
+  --disclaimer-background:#433820;
+  --disclaimer-font:#EFD98F;
+  --header-background: rgba(26, 37, 69, 0.8);
+
+  --nav-backdrop: rgba(0,0,0,0.4);
+  --nav-background: rgba(255, 255, 255, 0.05);
+  --nav-seperator: rgba(255, 255, 255, 0.1);
+
+  --gradient-1: #2C3D71;
+  --gradient-2: #353664;
+  --gradient-3: #292643;
+  --gradient-4: #080808;
+
+  --placeholder: #282828;
+
+  --games-background: rgba(26, 37, 69, 0.4);
+  --category-t-gradient: rgb(20, 20, 20);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+}
+
+a, a:link, a:visited, a:link:active, a:visited:active {
+  text-decoration: none;
+}
+
+a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--background), 0 0 0 4px var(--focus);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--font-1);
+  background: linear-gradient(var(--gradient-1), var(--gradient-2), var(--gradient-3), var(--gradient-4));
+}
+
+.grid-wrapper {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+}
+
+.grid {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-mask-image: linear-gradient(180deg,transparent, #000);
+  mask-image: linear-gradient(180deg,transparent, #000);
+  background-position: bottom;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(15 23 42 / 0.04)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+}
+
+.dark .grid {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(148 163 184 / 0.05)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+}
+
+.hide {
+  display: none;
+}
