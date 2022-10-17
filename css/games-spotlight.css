@@ -115,23 +115,23 @@
 
 .main-spotlight {
     background-color: var(--placeholder);
-    background: url(/assets/games/main_game.jpg);
+    background: url(../assets/games/main_game.jpg);
     background-size: cover;
     background-position: 50% 30%;
 }
 
 .slot-1 {
-    background: url(/assets/games/slot-1.png);
+    background: url(../assets/games/slot-1.png);
     background-size: cover;
 }
 
 .slot-2 {
-    background: url(/assets/games/slot-2.png);
+    background: url(../assets/games/slot-2.png);
     background-size: cover;
 }
 
 .slot-3 {
-    background: url(/assets/games/slot-3.png);
+    background: url(../assets/games/slot-3.png);
     background-size: cover;
 }
 

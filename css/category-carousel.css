@@ -7,7 +7,7 @@
 }
 
 .category-01 {
-    background: url(/assets/categories/fire.png);
+    background: url(../assets/categories/fire.png);
 }
 
 .category-01 .spotlight-gradient {
@@ -19,7 +19,7 @@
 }
 
 .category-02 {
-    background: url(/assets/categories/arcade.png);
+    background: url(../assets/categories/arcade.png);
 }
 
 .category-02 .spotlight-gradient {
@@ -31,7 +31,7 @@
 }
 
 .category-03 {
-    background: url(/assets/categories/puzzle.png);
+    background: url(../assets/categories/puzzle.png);
 }
 
 .category-03 .spotlight-gradient {
@@ -43,7 +43,7 @@
 }
 
 .category-04 {
-    background: url(/assets/categories/strat.png);
+    background: url(../assets/categories/strat.png);
 }
 
 .category-04 .spotlight-gradient {
@@ -55,7 +55,7 @@
 }
 
 .category-05 {
-    background: url(/assets/categories/card.png);
+    background: url(../assets/categories/card.png);
 }
 
 .category-05 .spotlight-gradient {
@@ -67,7 +67,7 @@
 }
 
 .category-06 {
-    background: url(/assets/categories/match.png);
+    background: url(../assets/categories/match.png);
 }
 
 .category-06 .spotlight-gradient {
@@ -79,7 +79,7 @@
 }
 
 .category-07 {
-    background: url(/assets/categories/word.png);
+    background: url(../assets/categories/word.png);
 }
 
 .category-07 .spotlight-gradient {

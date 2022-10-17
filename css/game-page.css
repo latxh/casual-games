@@ -132,7 +132,7 @@
     min-height: 70px;
     min-width: 70px;
     background-size: cover;
-    background-image: url(/assets/games/kittenforce.png);
+    background-image: url(../assets/games/kittenforce.png);
 }
 
 .game-info-buttons {
